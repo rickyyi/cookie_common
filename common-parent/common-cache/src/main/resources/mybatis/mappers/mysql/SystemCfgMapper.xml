@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.cookie.common.cache.dao.SystemCfgDao">
+    <resultMap id="getMap" type="cn.cookie.common.cache.entity.SystemCfg">
+    </resultMap>
+
+    <update id="setSysteCfg" parameterType="cn.cookie.common.cache.entity.SystemCfg">
+        update plum_system_cfg
+        <set>
+            value=#{value}
+        </set>
+        <where>`key`=#{key}</where>
+    </update>
+    
+</mapper>
